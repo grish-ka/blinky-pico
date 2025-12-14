@@ -1,6 +1,35 @@
-src/build
+# -----------------------------
+# Build & Output
+# -----------------------------
+# The build folder where all the compiling happens
+src/build/
+
+# Compiled binaries and map files
 *.uf2
-*.bin
 *.elf
-*.hex
 *.map
+*.hex
+*.bin
+*.dis
+
+# -----------------------------
+# CMake Generated Files
+# -----------------------------
+# (These appear if you run cmake outside a build folder by mistake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+
+# -----------------------------
+# Editor & OS Files
+# -----------------------------
+# VS Code settings (local user settings)
+.vscode/
+
+# Mac OS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
