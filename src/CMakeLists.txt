@@ -15,6 +15,9 @@ add_executable(blink
     blink.c
 )
 
+pico_enable_stdio_usb(blink 1)
+pico_enable_stdio_uart(blink 0)
+
 # Link the SDK libraries (stdlib allows use of sleep and gpio)
 target_link_libraries(blink pico_stdlib)
 

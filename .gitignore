@@ -1,10 +1,12 @@
 # -----------------------------
-# Build & Output
+# Build Directories
 # -----------------------------
-# The build folder where all the compiling happens
-src/build/
+# Ignore build folders anywhere in the project (e.g., src/build/)
+build/
 
-# Compiled binaries and map files
+# -----------------------------
+# Compiled Output (The Results)
+# -----------------------------
 *.uf2
 *.elf
 *.map
@@ -13,9 +15,9 @@ src/build/
 *.dis
 
 # -----------------------------
-# CMake Generated Files
+# CMake Generated Garbage
 # -----------------------------
-# (These appear if you run cmake outside a build folder by mistake)
+# These files are generated if you accidentally run cmake in the wrong folder
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -23,13 +25,9 @@ Makefile
 *.ninja
 
 # -----------------------------
-# Editor & OS Files
+# Editor / OS Files
 # -----------------------------
-# VS Code settings (local user settings)
 .vscode/
-
-# Mac OS junk
+.idea/
 .DS_Store
-
-# Windows junk
 Thumbs.db
